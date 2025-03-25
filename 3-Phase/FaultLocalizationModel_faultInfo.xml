@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="c84229fc-4ae3-4acc-82bb-0a54c6accdfb">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="583e29ae-67c9-4df1-8b17-a90ce2b1bc46">
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="0da159e4-453c-484e-b74a-55d3d6add3af">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="94dbc690-4b6a-4879-a790-ba4ad035ee0e">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="f4cbda67-0d41-4b56-815f-e7b9b6e29f58"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>PowerTransmissionModel_LLL_fault_ABC</name>
+      <resyncRefBlkID>Block|FaultLocalizationModel:263</resyncRefBlkID>
+      <resyncUUID>3e0627aa-0892-4390-b335-6dee9ec2f944</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="4485bf36-7538-414b-b76e-ec881a1d09d3">
+        <modelElementID>Outport|FaultLocalizationModel:263|PowerTransmissionModel:98|1</modelElementID>
+        <modelElementName>FaultLocalizationModel/PowerTransmissionModel/Enable LLL fault (A,B,C)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="046aa135-f858-4afb-b556-908302d5b83e">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="ee9af322-9d02-44e2-ac58-8e4f73512b16"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>PowerTransmissionModel_LLG_fault_BC</name>
+      <resyncRefBlkID>Block|FaultLocalizationModel:263</resyncRefBlkID>
+      <resyncUUID>e46181cd-81d5-45da-9710-edfa707e7150</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="854626d9-9ac6-4f89-ade7-20eff3e3ee26">
+        <modelElementID>Outport|FaultLocalizationModel:263|PowerTransmissionModel:97|1</modelElementID>
+        <modelElementName>FaultLocalizationModel/PowerTransmissionModel/Enable LLG fault (B,C)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="cc2b3f2f-3211-42c5-a1bd-b0b76d1c5de6">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="7e30bf82-e8a8-43d7-80af-85c433c10b9b"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>PowerTransmissionModel_LL_fault_AB</name>
+      <resyncRefBlkID>Block|FaultLocalizationModel:263</resyncRefBlkID>
+      <resyncUUID>762f98e6-8608-4a0b-9ae0-8601dc8c0884</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="92fd8a30-64e6-46f5-9ba9-981a8207dea8">
+        <modelElementID>Outport|FaultLocalizationModel:263|PowerTransmissionModel:96|1</modelElementID>
+        <modelElementName>FaultLocalizationModel/PowerTransmissionModel/Enable LL fault (A,B)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="6d8d791a-a1c8-49d6-8063-9a0c84f72d51">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="c1443eb7-8b5d-4c98-8ed0-098b01288e04"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>PowerTransmissionModel_LG_fault_A</name>
+      <resyncRefBlkID>Block|FaultLocalizationModel:263</resyncRefBlkID>
+      <resyncUUID>3a099edf-f145-4b6a-a3b1-dab6743a070c</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="ae4bf518-1f65-49da-91c1-e4c091a6671a">
+        <modelElementID>Outport|FaultLocalizationModel:263|PowerTransmissionModel:94|1</modelElementID>
+        <modelElementName>FaultLocalizationModel/PowerTransmissionModel/Enable LG fault (A)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="874beaaf-1579-4e63-9983-6f78fa8a33c9">
+      <activeFault type="faultinfo.SSFault" uuid="f466d391-de2c-4fb1-9543-d28982458969"/>
+      <faultedEntityID>SSSubelement|FaultLocalizationModel:263|PowerTransmissionModel:112|Section interface</faultedEntityID>
+      <faultedEntityName>FaultLocalizationModel/PowerTransmissionModel/Transmission Line 4/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="f466d391-de2c-4fb1-9543-d28982458969">
+        <faultDescription></faultDescription>
+        <faultName>PowerTransmissionModel_TransmissionLine4_fault</faultName>
+        <resyncUUID>36d76720-4ca5-4ce4-bd0d-0a11052dc399</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="f4cbda67-0d41-4b56-815f-e7b9b6e29f58">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="88364d69-1a0f-477f-ba04-7ceb1a10bc0c">
+      <activeFault type="faultinfo.SSFault" uuid="83449a93-9c15-4080-89a2-fcaaa578ab57"/>
+      <faultedEntityID>SSSubelement|FaultLocalizationModel:263|PowerTransmissionModel:111|Section interface</faultedEntityID>
+      <faultedEntityName>FaultLocalizationModel/PowerTransmissionModel/Transmission Line 3/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="83449a93-9c15-4080-89a2-fcaaa578ab57">
+        <faultDescription></faultDescription>
+        <faultName>PowerTransmissionModel_TransmissionLine3_fault</faultName>
+        <resyncUUID>f2160910-e897-4571-aee0-35affaadf722</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="ee9af322-9d02-44e2-ac58-8e4f73512b16">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="e91202b5-8d73-45eb-abcf-9a590fff0937">
+      <activeFault type="faultinfo.SSFault" uuid="11c2e273-ce35-4395-9a0e-3d9e442474a2"/>
+      <faultedEntityID>SSSubelement|FaultLocalizationModel:263|PowerTransmissionModel:110|Section interface</faultedEntityID>
+      <faultedEntityName>FaultLocalizationModel/PowerTransmissionModel/Transmission Line 2/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="11c2e273-ce35-4395-9a0e-3d9e442474a2">
+        <faultDescription></faultDescription>
+        <faultName>PowerTransmissionModel_TransmissionLine2_fault</faultName>
+        <resyncUUID>0a0e337a-d5da-4289-ba85-fa4adc7deb9a</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="7e30bf82-e8a8-43d7-80af-85c433c10b9b">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="36618ac5-e1d1-480c-95b0-1c3b5a786141">
+      <activeFault type="faultinfo.SSFault" uuid="738bdd5a-4ed1-4962-9b36-9b8e56049439"/>
+      <faultedEntityID>SSSubelement|FaultLocalizationModel:263|PowerTransmissionModel:109|Section interface</faultedEntityID>
+      <faultedEntityName>FaultLocalizationModel/PowerTransmissionModel/Transmission Line 1/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="738bdd5a-4ed1-4962-9b36-9b8e56049439">
+        <faultDescription></faultDescription>
+        <faultName>PowerTransmissionModel_TransmissionLine1_fault</faultName>
+        <resyncUUID>ce115fc0-054c-4549-a627-25ad1b7fcc1d</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="c1443eb7-8b5d-4c98-8ed0-098b01288e04">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2023-11-08T09:56:07</lastUpdatedAt>
+    <modelName>FaultLocalizationModel</modelName>
+    <modelUUID>bb2ea3f8-86ed-46b1-8296-29d1b6235995</modelUUID>
+  </faultinfo.FaultContainerSet>
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="029a9d5b-8678-4547-9938-432da8de55a3">
+    <failureModes type="faultinfo.FailureMode" uuid="c6681da0-7924-4514-9905-9fbbf3551c79">
+      <ID>4</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="f466d391-de2c-4fb1-9543-d28982458969"/>
+      <faultSubsystemName>TransmissionLine4_fault</faultSubsystemName>
+      <resyncUUID>9e9bb541-2e9e-40f1-9003-19a2882c73c8</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="0eb5f49d-8263-4e19-8558-de293510778d">
+      <ID>3</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="83449a93-9c15-4080-89a2-fcaaa578ab57"/>
+      <faultSubsystemName>TransmissionLine3_fault</faultSubsystemName>
+      <resyncUUID>79ebfbae-669b-44a2-87ca-877aa232cc58</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="5c7c929b-219d-4f83-9913-5bba294dbff2">
+      <ID>2</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="11c2e273-ce35-4395-9a0e-3d9e442474a2"/>
+      <faultSubsystemName>TransmissionLine2_fault</faultSubsystemName>
+      <resyncUUID>d2462668-7f0f-41a0-bd2d-95bba3bf430d</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="71106087-b642-4abc-b768-3732fbc31ca8">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="738bdd5a-4ed1-4962-9b36-9b8e56049439"/>
+      <faultSubsystemName>TransmissionLine1_fault</faultSubsystemName>
+      <resyncUUID>c5046fd5-ebc2-4849-af3f-0cc98b39276d</resyncUUID>
+    </failureModes>
+    <faultModelName>FaultModel</faultModelName>
+    <faultModelUUID>f972aa50-c061-47be-8761-1dd062b3d51d</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+</MF0>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="fb1cf8f9-1d9a-4f2a-87b4-6d1950c8857f">
+    <failureModes type="faultinfo.FailureMode" uuid="c5046fd5-ebc2-4849-af3f-0cc98b39276d">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="ce115fc0-054c-4549-a627-25ad1b7fcc1d"/>
+      <faultSubsystemName>TransmissionLine1_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="d2462668-7f0f-41a0-bd2d-95bba3bf430d">
+      <ID>2</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="0a0e337a-d5da-4289-ba85-fa4adc7deb9a"/>
+      <faultSubsystemName>TransmissionLine2_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="79ebfbae-669b-44a2-87ca-877aa232cc58">
+      <ID>3</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="f2160910-e897-4571-aee0-35affaadf722"/>
+      <faultSubsystemName>TransmissionLine3_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="9e9bb541-2e9e-40f1-9003-19a2882c73c8">
+      <ID>4</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="36d76720-4ca5-4ce4-bd0d-0a11052dc399"/>
+      <faultSubsystemName>TransmissionLine4_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>FaultModel</faultModelName>
+    <faultModelUUID>f972aa50-c061-47be-8761-1dd062b3d51d</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="6093b4d2-cf27-43fd-880c-92571d889b84">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="3a099edf-f145-4b6a-a3b1-dab6743a070c">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="9fe71eb6-4526-46a8-a63a-7ed0eae63f37"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>LG_fault_A</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="6a5fa83c-d8f9-4dc0-adc9-89f71395ace6">
+        <modelElementID>Outport|PowerTransmissionModel:94|1</modelElementID>
+        <modelElementName>PowerTransmissionModel/Enable LG fault (A)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="762f98e6-8608-4a0b-9ae0-8601dc8c0884">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="142e1f80-751c-4f4e-a6ef-1900b603db70"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>LL_fault_AB</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="40a221ce-ae4f-40f2-bfa4-856fec16dd11">
+        <modelElementID>Outport|PowerTransmissionModel:96|1</modelElementID>
+        <modelElementName>PowerTransmissionModel/Enable LL fault (A,B)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="e46181cd-81d5-45da-9710-edfa707e7150">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="bf6ef114-241e-402e-adcf-9ee873057137"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>LLG_fault_BC</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="75f107dd-b34f-471a-8e0f-ee1bc5ebbba8">
+        <modelElementID>Outport|PowerTransmissionModel:97|1</modelElementID>
+        <modelElementName>PowerTransmissionModel/Enable LLG fault (B,C)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="3e0627aa-0892-4390-b335-6dee9ec2f944">
+      <condition>x &gt;0</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="d7c1f896-7477-4536-b37b-2e6e5a23791e"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>LLL_fault_ABC</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="921dd30b-ae17-403c-aab5-07f22903899e">
+        <modelElementID>Outport|PowerTransmissionModel:98|1</modelElementID>
+        <modelElementName>PowerTransmissionModel/Enable LLL fault (A,B,C)/Outport/1</modelElementName>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="00222400-8982-4abd-8c0b-54bab5bc1245">
+      <activeFault type="faultinfo.SSFault" uuid="ce115fc0-054c-4549-a627-25ad1b7fcc1d"/>
+      <faultedEntityID>SSSubelement|PowerTransmissionModel:109|Section interface</faultedEntityID>
+      <faultedEntityName>PowerTransmissionModel/Transmission Line 1/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="ce115fc0-054c-4549-a627-25ad1b7fcc1d">
+        <faultDescription></faultDescription>
+        <faultName>TransmissionLine1_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="9fe71eb6-4526-46a8-a63a-7ed0eae63f37">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="20e80b14-b3c5-4014-a965-efc2e77b9c51">
+      <activeFault type="faultinfo.SSFault" uuid="0a0e337a-d5da-4289-ba85-fa4adc7deb9a"/>
+      <faultedEntityID>SSSubelement|PowerTransmissionModel:110|Section interface</faultedEntityID>
+      <faultedEntityName>PowerTransmissionModel/Transmission Line 2/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="0a0e337a-d5da-4289-ba85-fa4adc7deb9a">
+        <faultDescription></faultDescription>
+        <faultName>TransmissionLine2_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="142e1f80-751c-4f4e-a6ef-1900b603db70">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="a8f2b56a-ca3a-44cd-8313-9dbfb5019a5b">
+      <activeFault type="faultinfo.SSFault" uuid="f2160910-e897-4571-aee0-35affaadf722"/>
+      <faultedEntityID>SSSubelement|PowerTransmissionModel:111|Section interface</faultedEntityID>
+      <faultedEntityName>PowerTransmissionModel/Transmission Line 3/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="f2160910-e897-4571-aee0-35affaadf722">
+        <faultDescription></faultDescription>
+        <faultName>TransmissionLine3_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="bf6ef114-241e-402e-adcf-9ee873057137">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="dc5218b5-f6d9-4663-bf2f-5e1685a9fab3">
+      <activeFault type="faultinfo.SSFault" uuid="36d76720-4ca5-4ce4-bd0d-0a11052dc399"/>
+      <faultedEntityID>SSSubelement|PowerTransmissionModel:112|Section interface</faultedEntityID>
+      <faultedEntityName>PowerTransmissionModel/Transmission Line 4/Section interface</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="36d76720-4ca5-4ce4-bd0d-0a11052dc399">
+        <faultDescription></faultDescription>
+        <faultName>TransmissionLine4_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="d7c1f896-7477-4536-b37b-2e6e5a23791e">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2023-11-08T09:56:25</lastUpdatedAt>
+    <modelName>PowerTransmissionModel</modelName>
+    <modelUUID>fd45b75c-faf9-482d-92f0-cff13384bcdb</modelUUID>
+  </faultinfo.FaultContainerSet>
+</MF0>
